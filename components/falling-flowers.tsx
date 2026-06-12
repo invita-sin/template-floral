@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 interface Flower {
   id: number;
   left: number;
@@ -7,7 +9,6 @@ interface Flower {
   duration: number;
   size: number;
   opacity: number;
-  rotation: number;
 }
 
 function generateFlowers(): Flower[] {
@@ -18,12 +19,18 @@ function generateFlowers(): Flower[] {
     duration: 8 + Math.random() * 12,
     size: 12 + Math.random() * 16,
     opacity: 0.3 + Math.random() * 0.4,
-    rotation: Math.random() * 360,
   }));
 }
 
 export default function FallingFlowers() {
-  const flowers = generateFlowers();
+  const [flowers, setFlowers] = useState<Flower[]>([]);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setFlowers(generateFlowers());
+  }, []);
+
+  if (flowers.length === 0) return null;
 
   return (
     <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden">

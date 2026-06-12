@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Floral Romance | Wedding Invitation",
   description:
     "Template undangan pernikahan dengan tema Floral Romance — garden wedding intimate nan romantis.",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({

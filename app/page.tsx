@@ -1,4 +1,4 @@
-import OpeningCover from "@/components/opening-cover";
+import InvitationWrapper from "@/components/invitation-wrapper";
 import HeroCouple from "@/components/hero-couple";
 import LoveStory from "@/components/love-story";
 import EventDetails from "@/components/event-details";
@@ -10,9 +10,8 @@ import FallingFlowers from "@/components/falling-flowers";
 
 export default function Home() {
   return (
-    <>
+    <InvitationWrapper>
       <FallingFlowers />
-      <OpeningCover />
       <HeroCouple />
       <LoveStory />
       <EventDetails />
@@ -20,6 +19,6 @@ export default function Home() {
       <Maps />
       <Gift />
       <RSVP />
-    </>
+    </InvitationWrapper>
   );
 }

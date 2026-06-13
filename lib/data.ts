@@ -1,3 +1,5 @@
+import { withBase } from "./utils";
+
 export const weddingData = {
   couple: {
     bride: "Aisyah",
@@ -6,7 +8,7 @@ export const weddingData = {
     fullGroom: "Rafiq Ahmad",
     parentsBride: "Bapak H. Suharto & Ibu Hj. Siti Fatimah",
     parentsGroom: "Bapak Drs. H. Maulana & Ibu Hj. Dewi Sartika",
-    photoCouple: "/images/couple.jpg",
+    photoCouple: withBase("/images/couple.jpg"),
   },
   date: {
     full: "Sabtu, 26 Desember 2026",
@@ -57,12 +59,12 @@ export const weddingData = {
     },
   ],
   gallery: [
-    { src: "/gallery/1.jpg", alt: "Prewedding 1" },
-    { src: "/gallery/2.jpg", alt: "Prewedding 2" },
-    { src: "/gallery/3.jpg", alt: "Prewedding 3" },
-    { src: "/gallery/4.jpg", alt: "Prewedding 4" },
-    { src: "/gallery/5.jpg", alt: "Prewedding 5" },
-    { src: "/gallery/6.jpg", alt: "Prewedding 6" },
+    { src: withBase("/gallery/1.jpg"), alt: "Prewedding 1" },
+    { src: withBase("/gallery/2.jpg"), alt: "Prewedding 2" },
+    { src: withBase("/gallery/3.jpg"), alt: "Prewedding 3" },
+    { src: withBase("/gallery/4.jpg"), alt: "Prewedding 4" },
+    { src: withBase("/gallery/5.jpg"), alt: "Prewedding 5" },
+    { src: withBase("/gallery/6.jpg"), alt: "Prewedding 6" },
   ],
   maps: {
     src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d106.8!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sid!4v1",

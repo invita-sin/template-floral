@@ -6,7 +6,7 @@ export const weddingData = {
     fullGroom: "Rafiq Ahmad",
     parentsBride: "Bapak H. Suharto & Ibu Hj. Siti Fatimah",
     parentsGroom: "Bapak Drs. H. Maulana & Ibu Hj. Dewi Sartika",
-    photoCouple: "/public/images/couple.jpg",
+    photoCouple: "/images/couple.jpg",
   },
   date: {
     full: "Sabtu, 26 Desember 2026",
